@@ -19,4 +19,4 @@ Besides the examples, in `data_preparation/data_preparation.ipynb` the process o
 
 ## Data
 
-The data used in this workshop can be found on Zenodo: [link](https://zenodo.org/records/16613694).
+The data used in this workshop can be found on Zenodo: [link](https://zenodo.org/records/16941613).
