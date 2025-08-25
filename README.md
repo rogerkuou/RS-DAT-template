@@ -2,18 +2,20 @@
 
 Material for the EO Summer School 2025 by OpenGeoHub
 
-## In this workshop: scale up a machine learning model to large data
+## In this workshop: inference of a machine learning model at scale
 
-During this workshop, we will use a simple machine learning model as an example to demonstrate how to scale up an EO workflow to large data on HPC. We prepared a single use case, where a binary waterbody classification model is trained on a cutout of a Sentinel-2 RGB image. The model is then applied to the full Sentinel-2 RGB image, which is about 1.5 GB in size, predicting water and non-water pixels.
+During this workshop, we will use a simple random forest classifier as an example to demonstrate how to scale up the inference of a machine learning model to large EO data on HPC. 
 
-## File structures
+In the presented use case, a binary waterbody classification model is trained on a cutout of a Sentinel-2 RGB image. The model is then applied to a larger Sentinel-2 mosaic, predicting a water classification mask.
+
+## Repository structure
 
 In the `notebook` directory, we prepared two example:
 
-- step1_train_on_cutout.ipynb: training a simple binary classifier on a RGB cutout;
-- step2_prediction_on_large_data.ipynb: apply the trained model on a 1.5 GB RGB image;
+- step1_train_on_cutout.ipynb: training a simple binary classifier on a scene cutout;
+- step2_prediction_on_large_data.ipynb: apply the trained model on a larger RGB mosaic;
 
-Besides the examples, in `data_preparation/data_preparation.ipynb` the process of generating the example RGB image is demonstrated.
+Besides the examples, in `data_preparation/data_preparation.ipynb` the process of generating the example datasets is demonstrated.
 
 ## Data
 
