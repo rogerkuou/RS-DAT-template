@@ -4,20 +4,22 @@
 
 This repository hosts the material for a workshop taught at the [EO Summer School 2025 - Data Science for Earth Observation](https://opengeohub.org/summer-school/summer-school-2025/) by [OpenGeoHub](https://opengeohub.org/)
 
-During the workshop, demonstrate how to scale up the inference of a machine learning model to large EO data on HPC.
+During the workshop, we will demonstrate how to scale up the inference of a machine learning model to large EO data on HPC in an interactive session using [Jupyter](https://docs.jupyter.org/en/latest/) and [Dask](https://docs.dask.org/en/stable/index.html).
 
 We will use a simple random forest classifier as an example. We will train a toy water classification model on a cutout of a Sentinel-2 RGB scene. We will then apply the model to a larger mosaic involving multiple scenes, and predict its water classification mask.
 
+We will run the use case on the [Spider](https://doc.spider.surfsara.nl/en/latest/Pages/about.html) cluster, a high-throuput data processing platform hosted by [SURF](https://www.surf.nl/).
+
 ## Repository structure
 
-* [`notebooks/`](./notebooks/) contains the Jupyter notebooks that implements the use case.
-* [`scripts/`](./scripts/) contains the batch job script to start a Jupyter server on Spider.
-* [`.github/`](./github) contains all the scripts that build the container image with the required enviroment.
-* [`environment.yml`](./environment.yml) is the conda environment file that contains all the project dependencies.
+* [`notebooks/`](./notebooks/) contains the Jupyter notebooks that implement the use case.
+* [`scripts/`](./scripts/) contains the batch job script to start a Jupyter session on Spider.
+* [`.github/`](./github) contains the scripts that take care of building and publishing a container image with the required dependencies.
+* [`environment.yml`](./environment.yml) is the environment file that define all the project dependencies.
 
 ## Data
 
-The data used in this workshop is published [on Zenodo](https://zenodo.org/records/16941613) and is available on the Spider system in the following directory: `/project/remotesensing/Data/2025-09-03-eo-summer-school/`.
+The data used in this workshop is available on the Spider system in the following directory: `/project/remotesensing/Data/2025-09-03-eo-summer-school/`. The dataset is also published on Zenodo: [link](https://zenodo.org/records/16941613)
 
 ## Setup
 
@@ -50,3 +52,11 @@ Once this software is installed, follow the following setup steps:
 3. Download the following batch job script and save it to a known path (e.g. on your Desktop): [spider-job.bsh]()
 
 4. Pick a Spider user account from [this document]() (the password to access the document will be given at the workshop). Add your name to the "Name" column, then download the private SSH key required to authenticate and save it to a known path (e.g. on your Desktop).
+
+## Run
+
+Start the Jupyter session on Spider with the following command:
+
+```shell
+jupyterdask -i /path/to/ssh/key --template /path/to/jupyterdask-spider.slurm <YOUR_USERNAME>@spider.surf.nl
+```
