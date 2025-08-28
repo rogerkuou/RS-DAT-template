@@ -2,10 +2,12 @@ name: eo-summer-school
 channels:
  - conda-forge
 dependencies:
- - python=3.10
- - rioxarray
+ - python=3.12
+ - dask
  - geopandas
- - scikit-learn
  - matplotlib
- - pip:
-    - graphviz
+ - odc-stac
+ - pystac-client
+ - rioxarray
+ - shapely
+ - scikit-learn
