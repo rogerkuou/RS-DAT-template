@@ -19,7 +19,11 @@ We will run the use case on the [Spider](https://doc.spider.surfsara.nl/en/lates
 
 ## Data
 
-The data used in this workshop is available on the Spider system in the following directory: `/project/remotesensing/Data/2025-09-03-eo-summer-school/`. The dataset is also published on Zenodo: [link](https://zenodo.org/records/16941613)
+The data used in this workshop is available on the Spider system in the following directory: 
+```
+/project/remotesensing/Data/2025-09-03-eo-summer-school/
+```
+The dataset is also published on Zenodo: [link](https://zenodo.org/records/16941613)
 
 ## Setup
 
