@@ -55,7 +55,7 @@ Once this software is installed, follow the following setup steps:
 
 3. Download the following batch job script and save it to a known path (e.g. on your Desktop): [jupyterdask-spider.slurm](https://raw.githubusercontent.com/RS-DAT/2025-09-03-EO-summer-school/refs/heads/main/scripts/jupyterdask-spider.slurm)
 
-4. Pick a Spider user account from [this document]() (the password to access the document will be given at the workshop). Add your name to the "Name" column, then download the private SSH key required to authenticate and save it to a known path (e.g. on your Desktop).
+4. Pick a Spider user account from [this document](https://nlesc-my.sharepoint.com/:w:/g/personal/m_grootes_esciencecenter_nl/EShepbH_bv1FskW2SIM_EBwBawh1ydjRsluF0zlkGWAnPQ?e=1WjykL) (the password to access the document will be given at the workshop). Add your name to the "Name" column, then download the private SSH key required to authenticate and save it to a known path (e.g. on your Desktop).
 
 ## Run
 
