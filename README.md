@@ -38,16 +38,16 @@ In order to follow along with the instructor, you will need a laptop with the fo
 Once this software is installed, follow the following setup steps:
 
 1. Create a Python virtual environment. You can use any environment manager you are comfortable with (`venv`, `virtualenv`, `conda`, ...). Using `venv`, you can create the "myenv" environment with the following commands:
-  ```shell
-  python -m venv myenv
-  source myenv/bin/activate
-  ```
+   ```shell
+   python -m venv myenv
+   source myenv/bin/activate
+   ```
 
 2. Install the Python tool hosted in [this repository](https://github.com/RS-DAT/JupyterDaskOnSLURM/tree/main/tools/jupyterdask):
-  ```shell
-  pip install -e "git+https://github.com/RS-DAT/JupyterDaskOnSLURM.git#egg=jupyterdask&subdirectory=tools/jupyterdask"
-  jupyterdask --version  # check the command line tool is correctly installed
-  ```
+   ```shell
+   pip install -e "git+https://github.com/RS-DAT/JupyterDaskOnSLURM.git#egg=jupyterdask&subdirectory=tools/jupyterdask"
+   jupyterdask --version  # check the command line tool is correctly installed
+   ```
 
 3. Download the following batch job script and save it to a known path (e.g. on your Desktop): [jupyterdask-spider.slurm](https://raw.githubusercontent.com/RS-DAT/2025-09-03-EO-summer-school/refs/heads/main/scripts/jupyterdask-spider.slurm)
 
