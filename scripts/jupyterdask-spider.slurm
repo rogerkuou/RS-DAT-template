@@ -5,10 +5,10 @@
 #SBATCH --time=02:00:00
 #SBATCH --partition=normal
 #SBATCH --output=.jupyterdask/%x-%j.out
-##SBATCH --reservation=workshop
+#SBATCH --reservation=workshop
 
 APPTAINER_CMD="apptainer exec --bind /tmp,/scratch,/project,/run,/usr,/etc"
-APPTAINER_IMAGE="oras://ghcr.io/rs-dat/2025-09-03-eo-summer-school:latest"
+APPTAINER_IMAGE="/project/remotesensing/Software/eo-summer-school/2025-09-03-eo-summer-school.sif"
 PYTHON="${APPTAINER_CMD} ${APPTAINER_IMAGE} python"
 
 export DASK_DISTRIBUTED__DASHBOARD__LINK="/proxy/{port}/status"
