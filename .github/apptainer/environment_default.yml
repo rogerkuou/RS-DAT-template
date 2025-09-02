@@ -7,3 +7,4 @@ dependencies:
  - dask[complete]
  - jupyterlab-git
  - jupyterlab>=3
+ - python-graphviz
