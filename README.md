@@ -62,5 +62,5 @@ Once this software is installed, follow the following setup steps:
 Start the Jupyter session on Spider with the following command:
 
 ```shell
-jupyterdask -i /path/to/ssh/key --template /path/to/jupyterdask-spider.slurm <YOUR_USERNAME>@spider.surf.nl
+jupyterdask -i /path/to/ssh/key --template /path/to/jupyterdask-spider.slurm --run <YOUR_USERNAME>@spider.surf.nl
 ```
