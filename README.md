@@ -6,7 +6,11 @@ This repository hosts the material for a workshop taught at the [EO Summer Schoo
 
 During the workshop, we will demonstrate how to scale up the inference of a machine learning model to large EO data on HPC in an interactive session using [Jupyter](https://docs.jupyter.org/en/latest/) and [Dask](https://docs.dask.org/en/stable/index.html).
 
-We will use a simple random forest classifier as an example. We will train a toy water classification model on a cutout of a Sentinel-2 RGB scene. We will then apply the model to a larger mosaic involving multiple scenes, and predict its water classification mask.
+We will:
+
+* Introduce the framework that we use to start Jupyter on a HPC system.
+* Run through a short introduction to Dask.
+* Present a use-case: we will train a toy water classification model on a cutout of a Sentinel-2 RGB scene, then apply the model to a larger mosaic involving multiple scenes, and predict its water classification mask.
 
 We will run the use case on the [Spider](https://doc.spider.surfsara.nl/en/latest/Pages/about.html) cluster, a high-throuput data processing platform hosted by [SURF](https://www.surf.nl/).
 
