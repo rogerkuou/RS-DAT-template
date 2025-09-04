@@ -27,7 +27,7 @@ The data used in this workshop is available on the Spider system in the followin
 ```
 /project/remotesensing/Data/eo-summer-school/
 ```
-The dataset is also published on Zenodo: [link](https://zenodo.org/records/16941613)
+The dataset is also published on Zenodo: [link](https://zenodo.org/records/17044819)
 
 ## Setup
 
