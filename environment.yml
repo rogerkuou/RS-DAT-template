@@ -13,5 +13,5 @@ dependencies:
  - sparse
  - scikit-learn
  - pip:
-  - sarxarray
-  - stmtools
+     - sarxarray
+     - stmtools
