@@ -2,7 +2,6 @@ name: depsi
 channels:
  - conda-forge
 dependencies:
- - python=3.12
  - matplotlib
  - pydantic
  - pykrige
@@ -14,5 +13,5 @@ dependencies:
  - sparse
  - scikit-learn
  - pip:
-  - sarxarray>=1.2.2
+  - sarxarray
   - stmtools
