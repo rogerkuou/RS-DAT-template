@@ -1,13 +1,17 @@
-name: eo-summer-school
+name: depsi
 channels:
  - conda-forge
 dependencies:
  - python=3.12
- - dask
- - geopandas
  - matplotlib
- - odc-stac
- - pystac-client
- - rioxarray
- - shapely
- - scikit-learn
+ - pydantic
+ - pykrige
+ - sarxarray>=1.2.2
+ - scipy
+ - stmtools
+ - ruptures
+ - networkx
+ - drama
+ - asf_search
+ - sparse
+ - scikit-learn"
