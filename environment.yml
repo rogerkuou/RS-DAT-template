@@ -8,10 +8,10 @@ dependencies:
  - scipy
  - ruptures
  - networkx
- - drama
  - asf_search
  - sparse
  - scikit-learn
  - pip:
      - sarxarray
      - stmtools
+     - drama
