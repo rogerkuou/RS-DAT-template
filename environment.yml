@@ -14,4 +14,4 @@ dependencies:
  - drama
  - asf_search
  - sparse
- - scikit-learn"
+ - scikit-learn
